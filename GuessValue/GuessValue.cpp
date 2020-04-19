@@ -73,10 +73,13 @@ int main()
         srand((unsigned int)time(NULL));
         guess = rand() % diff + min;
     }
-
+    //adds to the Attempt # and stops display for set amount of time.
+    att++;
     sleep_for(milliseconds(sec));
     //if the computers correct
-    cout << endl<< com << "Correct, the number was " << num << ", good job." << endl;
+    cout << endl << com << "Correct, the number was " << num << ", good job." << endl;
+    //tells the Attempts the computer got it right on
+    cout << com << "You got it on attempt #" << att <<"!" << endl;
     //fun program ending sequence
     cout << "TO USER: Type 1 and press ENTER to end the program: ";
     num = 2;
