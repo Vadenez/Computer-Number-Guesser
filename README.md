@@ -10,7 +10,7 @@ The biggest parameters I've set is 1,000,000,000 with a minimum of 1, the comput
 This was made using Visual Studios 2019 on 2020-04-18
 
 ### Plans:
-I plan on converting it from CodeBlocks to Visual Studios 2019
+None
 
 ### Links:
 * CodeBlocks: http://www.codeblocks.org/
