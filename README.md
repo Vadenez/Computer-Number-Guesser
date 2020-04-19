@@ -12,12 +12,6 @@ This was made using Visual Studios 2019 on 2020-04-18
 ### Plans:
 None
 
-### Links:
-* CodeBlocks: http://www.codeblocks.org/
-* Visual Studios 2019: https://visualstudio.microsoft.com/vs/
-* GNU GCC: https://gcc.gnu.org/
-* C++: https://en.wikipedia.org/wiki/C%2B%2B
-
 ## MIT License
 
 > Copyright (c) 2020 Joseph Lavoie
