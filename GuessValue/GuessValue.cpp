@@ -8,12 +8,10 @@ using namespace chrono;
 
 int main()
 {
-    int max, min, diff, guess, sec, att, num, o;
+    int max, min, diff, sec, num;
     string com = "TO COMPUTER: ";
     string to = "Your guess was to ";
-    guess = NULL;
-    att = 0;
-    o = 1;
+    int guess = 0, att = 0;
     //Descirption
     cout << "This is a game where your computer will try and guess your value." << endl;
     //get max
@@ -67,7 +65,7 @@ int main()
         }
         //tells us the computer's guess
         cout << com<< "Your guess: "<< guess << endl;
-        
+
         diff = max - min;
         //new guess
         srand((unsigned int)time(NULL));
@@ -80,24 +78,26 @@ int main()
     cout << endl << com << "Correct, the number was " << num << ", good job." << endl;
     //tells the Attempts the computer got it right on
     cout << com << "You got it on attempt #" << att <<"!" << endl;
+    //sets the attempt number to 1
+    att = 1;
     //fun program ending sequence
     cout << "TO USER: Type 1 and press ENTER to end the program: ";
     num = 2;
     cin >> num;
-    
+
     while (num != 1) {
         cout << endl << "You entered " << num << ", which is not 1" << endl;
         cout << "Type 1 then press ENTER: ";
         cin >> num;
-        o++;
+        att++;
 
         while (o >= 3) {
-            cout << endl << "This is attempt #" << o + 1<< ", of entering the number \"1\"" << endl;
+            cout << endl << "This is attempt #" << att + 1<< ", of entering the number \"1\"" << endl;
             cout << "Waiting: ";
             cin >> num;
-            o++;
+            att++;
             if (num == 1) {
-                o = 0;
+                att = 0;
             }
             else {}
         }
